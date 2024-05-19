@@ -66,3 +66,13 @@ channel = beta
 repo = fluidd-core/fluidd
 path = /usr/data/fluidd
 
+[update_manager mobileraker]
+type = git_repo
+path = /usr/data/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+virtualenv = /usr/data/mobileraker-env
+primary_branch = main
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+managed_services = mobileraker
+
